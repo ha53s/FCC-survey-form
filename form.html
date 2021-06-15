@@ -1,0 +1,184 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <title>FCC Form</title>
+    <style>
+    body{
+  background-color:#B4ECD2  ;
+  margin:auto;
+  font-family:Arial;
+}
+
+#title{
+  text-align:center;
+  font-size:36px;
+  padding-top:20px;
+}
+
+p{
+  padding:12px;
+  font-size:18px;
+  text-align:center
+  
+  
+}
+.header{
+  margin-top:5%;
+  margin-left:10%;
+  margin-right:10%;
+  background-color:#549074 ;
+  border:black solid 5px;
+  box-shadow:10px 15px gray;
+  
+}
+
+#formback{
+  margin-top:8%;
+  margin-left:20%;
+  margin-right:20%;
+  border:black solid 5px;
+  box-shadow:10px 15px gray;
+
+}
+
+#survey-form{
+  margin:7%;
+}
+
+
+#name-label, #email-label , #number-label,#country-label{
+  font-size:22px;
+  padding:12px;
+  margin:3%
+}
+
+#number, #name , #email{
+  width:45%;
+  margin:2%;
+}
+
+#radio, #check{
+  border:black solid 2px;
+  margin:2%;
+}
+
+h4{
+  margin:3%
+}
+
+.circle{
+  margin:1px;
+  font-size:15px;
+}
+
+select{
+  font-size:20px;
+  margin:2%
+}
+
+.comments{
+  margin:2%;
+  font-size:20px;
+}
+.message{
+  width:50%;
+  height:25px;
+  magin:2%
+   
+}
+
+button{
+  font-size:20px;
+  margin:10%
+  
+}
+
+
+    </style>
+  </head>
+    <body>
+      <div class = "header">
+      <h1 id = "title">FCC Survey Form</h1>
+      <p id = "description">Just a random form I built to complete freecodecamps second project in responsive web design!!</p>
+      </div>
+      <div id ="formback">
+      <form id = "survey-form">
+        <label id ="name-label">Name: </label>
+        <input type = "text" id ="name" placeholder="Enter your name">
+        <br>
+        <label id= "email-label">Email: </label>
+        <input type = "email" id ="email" placeholder="Enter your email">
+        <br>
+         <label id="number-label">Age: </label>
+        <input type = "number" id ="number" placeholder="Enter your age" min= "13" max="100">
+        <br>
+        <label id="country-label"> Country: </label>
+        <select id = "dropdown" placeholder = "Choose your country" > 
+          <option value="Canada">Canada</option>
+          <option value="India">India</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Russia">Russia</option>
+          <option value="Spaain">Spain</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Peru">Peru</option>
+          <option value="Qatar">Qatar</option>
+          <option value="USA">USA</option>
+          <option value="Jordan">Jordan</option>
+          <option value="China">China</option>
+          <option value="Chile">Chile</option>
+          <option value="Italy">Italy</option>
+          <option value="France">France</option>
+            
+          </select>
+        <br>
+        <br>
+        <div id ="radio">
+          <h4>What is your favorite color: </h4>
+          <input name="color" type= "radio" >
+          <label class ="circle">Red</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">White</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Black</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Purple</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Pink</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Green</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Blue</label>
+                    <input name="color" type= "radio">
+          <label class ="circle">Orange</label>
+        </div>
+        <br>
+        
+                <div id ="check">
+          <h4>What are your Hobbies: </h4>
+          <input value="Sports" type= "checkbox">
+          <label>Sports</label>
+                    <input value="Cooking" type= "checkbox">
+          <label>Cooking</label>
+                    <input value="Drawing" type= "checkbox">
+          <label>Drawing</label>
+                    <input value="Reading" type= "checkbox">
+          <label>Reading</label>
+                    <input value="Photography" type= "checkbox">
+          <label>Photography</label>
+                    <input value="Music" type= "checkbox">
+          <label>Music</label>
+                    <input value="Dancing" type= "checkbox">
+          <label>Dancing</label>
+                    <input value="Programming" type= "checkbox">
+          <label>Programming</label>
+        </div>
+        <br>
+                <label class ="comments">Comments: </label>
+        <input type="textarea" placeholder="Do you have any Comments??" class ="message">
+        <br>
+        <button id = "submit">Submit</button>
+        
+      </form>
+    <div>
+    </body>
+  </html>
